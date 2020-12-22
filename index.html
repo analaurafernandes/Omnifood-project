@@ -11,21 +11,34 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet"> <!--font name: Lato-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--links the animations css file-->
+        
+        <!-----------------------------favicons---------------------------->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
+        <link rel="manifest" href="resources/icons/site.webmanifest">
+        <link rel="mask-icon" href="resources/icons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="resources/icons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="resources/icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
     </head>
     
     <body>
         <!--------------------------HEADER------------------------------>
-        <header>
+        <header id="header">
             <nav>
                 <div class="row">
-                    <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
-                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
-                    <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our cities</a></li>
-                        <li><a href="#">Sign up</a></li>
+                    <a href="#header"><img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo"></a>
+                    <a href="#header"><img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"></a>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">Food delivery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#sign-up">Sign up</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
                 </div>
             </nav>
             <div class="hero-text-box">
@@ -36,7 +49,7 @@
         </header>
         
         <!--------------------------FEATURES------------------------------>
-        <section class="section-features js--section-features">
+        <section class="section-features js--section-features" id="features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">
@@ -44,7 +57,7 @@
                 </p>
             </div>
             
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">  <!--col class is from the grid css-->
                     <ion-icon class="big-icon" name="infinite-outline"></ion-icon>
                     <h3>Up to 365 days/year</h3>
@@ -132,7 +145,7 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">   
+                    <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">   
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="works-step clearfix">
@@ -161,11 +174,11 @@
         </section>
         
         <!--------------------------CITIES------------------------------>
-        <section class="section-cities">
+        <section class="section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
                     <img src="resources/img/lisbon-3.jpg">
                     <h3>Lisbon</h3>
@@ -265,12 +278,12 @@
         </section>
         
         <!--------------------------PLANS------------------------------>
-        <section class="sign-up js--section-plans">
+        <section class="sign-up js--section-plans" id="sign-up">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-3 js--wp-4">
                     <div class="plan-box">
                         <div>
                             <h3>Premium</h3>

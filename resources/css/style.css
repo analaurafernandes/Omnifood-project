@@ -213,6 +213,7 @@ header{
     float: right;
     list-style: none;
     margin-top: 55px;
+    display: inline-block;
 }
 
 .main-nav li{
@@ -250,14 +251,34 @@ header{
 
 .sticky .main-nav{ margin-top: 18px; }
 
-.sticky li a:link,
-.sticky li a:visited{
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
     padding: 19px 0;
     color: #555;
 }
 
 .sticky .logo{ display: none; }
 .sticky .logo-black{ display: block; }
+
+/*MOBILE NAVI*/
+.mobile-nav-icon,
+.sticky .mobile-nav-icon{
+    float: right;
+    margin-top: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon{
+    font-size: 200%;
+    color: #fff;
+}
+
+.sticky .mobile-nav-icon ion-icon{
+    font-size: 200%;
+    color: #555;
+}
+
 /*------------------------------------------*/
 /*MEALS*/
 /*------------------------------------------*/
@@ -622,4 +643,26 @@ footer p{
 
 .logo-instagram:hover{
     color: #E1306C;
+}
+
+
+/*------------------------------------------*/
+/*ANIMATIONS*/
+/*------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0; /*so this element is not visible*/
+    animation-duration: 1s;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated,
+.js--wp-2.animate__animated{
+    opacity: 1; /*turns the element visible*/   
+}
+
+.js--wp-4{
+    animation-duration: 1s;
 }
